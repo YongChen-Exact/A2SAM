@@ -4,7 +4,7 @@
 
 Accurate segmentation of tubular structures, such as blood vessels and airway trees, is critical across various medical applications. However, this task remains highly challenging due to the diverse global morphologies and thin local structures of these tubular formations. Segment Anything Model (SAM)-based methods have shown impressive performance in image segmentation, yet their reliance on manually crafted prompts makes them unsuitable for fine-grained tubular structures. Moreover, existing fine-tuning methods have not fully explored how to identify the most informative parameters within SAM to maximize adaptation performance. To fill this gap, we introduce a novel framework termed Active Adaptation of SAM (A<sup>2</sup>SAM), which adopts informativeness-driven adaptation as its governing principle for medical tubular segmentation. Specifically, we design a structural prompt generator to automatically produce topology-aware prompts that guide SAM toward true tubular structures. The structural uncertainty embedded in these prompts can capture variations in global morphology. Furthermore, we find that parameters with strong task-specific influence and lower risk of disrupting generalizable knowledge are beneficial for adapting SAM. We define these parameters as contrastive parameters and propose a contrastive parameter selection strategy that modulates squared-gradient influence with magnitude-based preservation. This mechanism enhances adaptation performance in tubular segmentation and preserves SAM’s generalizable knowledge. Finally, we propose a thickness-aware loss function to improve local connectivity in thin structures. The proposed A<sup>2</sup>SAM is validated on five diverse benchmark datasets of medical tubular segmentation. Comprehensive experiments demonstrate that A<sup>2</sup>SAM achieves strong overall performance.
 
-The overall framework of our proposed A2SAM:
+The overall framework of our proposed A<sup>2</sup>SAM:
 ![](imgs/methods.png)
 
 ## Dataset 📂
@@ -72,7 +72,7 @@ your_dataset_root_path/DRIVE/
                 ...
 ```
 
-### Step 2: Training A2SAM 🔧
+### Step 2: Training A<sup>2</sup>SAM 🔧
 
 You can run the following code to start the training:
 
@@ -84,7 +84,7 @@ Arguments:
 
 --name: Please specify an identifier for this experiment, e.g., `drive_cps_train1`.
 
-### Step 3: Testing A2SAM 📊
+### Step 3: Testing A<sup>2</sup>SAM 📊
 
 You can run the following code to start the testing:
 
