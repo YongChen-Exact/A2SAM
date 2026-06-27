@@ -1,4 +1,4 @@
-# Active Adaptation of SAM via Structural Prompts for Medical Tubular Segmentation
+# Informativeness-driven active adaptation of SAM: Structural prompts and contrastive parameter selection for medical tubular segmentation
 
 ## Introduction 📜
 
