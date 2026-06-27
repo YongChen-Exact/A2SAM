@@ -5,7 +5,7 @@
 This project proposes a novel framework, termed Active Adaptation of SAM (A2SAM), which integrates the principle of informativeness from active learning into SAM adaptation for medical tubular segmentation. Specifically, we design a structural prompt generator to automatically produce topology-aware prompts that guide SAM. The structural uncertainty embedded in these prompts can capture variations in global morphology. Furthermore, we find that parameters with strong task-specific influence but limited generalization are beneficial for adapting SAM. We define these parameters as cps parameters and propose a cps parameter selection strategy that integrates squared-gradient influence and magnitude-based generalization. This mechanism enhances adaptation performance in tubular segmentation and preserves SAM’s generalizable knowledge. Finally, we propose a thickness-aware loss function to improve topological connectivity in thin local structures. Comprehensive experiments consistently demonstrate that A2SAM outperforms existing state-of-the-art methods.
 
 The overall framework of our proposed A2SAM:
-![](imgs/methods-last.png)
+![](imgs/methods.png)
 
 ## Dataset 📂
 
