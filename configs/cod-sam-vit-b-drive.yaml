@@ -25,9 +25,9 @@ val_dataset:
       root_path_3: /data/chenyong/codes/A2SAM/data/DRIVE/validation/uncertainty
       root_path_4: /data/chenyong/codes/A2SAM/data/DRIVE/validation/logit
       cache: none
-      split_key: test
+      split_key: validation
   wrapper:
-    name: val
+    name: validation
     args:
       inp_size: 1024
       original_size: (584, 565)
