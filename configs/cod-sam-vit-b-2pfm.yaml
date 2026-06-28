@@ -20,14 +20,14 @@ val_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: /data/chenyong/codes/A2SAM/data/2PFM/test/imgs
-      root_path_2: /data/chenyong/codes/A2SAM/data/2PFM/test/labs
-      root_path_3: /data/chenyong/codes/A2SAM/data/2PFM/test/uncertainty
-      root_path_4: /data/chenyong/codes/A2SAM/data/2PFM/test/logit
+      root_path_1: /data/chenyong/codes/A2SAM/data/2PFM/validation/imgs
+      root_path_2: /data/chenyong/codes/A2SAM/data/2PFM/validation/labs
+      root_path_3: /data/chenyong/codes/A2SAM/data/2PFM/validation/uncertainty
+      root_path_4: /data/chenyong/codes/A2SAM/data/2PFM/validation/logit
       cache: none
-      split_key: test
+      split_key: validation
   wrapper:
-    name: val
+    name: validation
     args:
       inp_size: 1024
       original_size: (1024, 1024)
