@@ -20,10 +20,10 @@ val_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: /data/chenyong/codes/A2SAM/data/DRIVE/test/images
-      root_path_2: /data/chenyong/codes/A2SAM/data/DRIVE/test/1st_manual
-      root_path_3: /data/chenyong/codes/A2SAM/data/DRIVE/test/uncertainty
-      root_path_4: /data/chenyong/codes/A2SAM/data/DRIVE/test/logit
+      root_path_1: /data/chenyong/codes/A2SAM/data/DRIVE/validation/images
+      root_path_2: /data/chenyong/codes/A2SAM/data/DRIVE/validation/1st_manual
+      root_path_3: /data/chenyong/codes/A2SAM/data/DRIVE/validation/uncertainty
+      root_path_4: /data/chenyong/codes/A2SAM/data/DRIVE/validation/logit
       cache: none
       split_key: test
   wrapper:
