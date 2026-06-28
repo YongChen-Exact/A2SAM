@@ -4,7 +4,7 @@ train_dataset:
     args:
       root_path_1: /data/chenyong/codes/A2SAM/data/FIVES/train/Original
       root_path_2: /data/chenyong/codes/A2SAM/data/FIVES/train/Ground truth
-      root_path_3: /data/chenyong/codes/A2SAM/data/FIVES/train/uncertainty_ent
+      root_path_3: /data/chenyong/codes/A2SAM/data/FIVES/train/uncertainty
       root_path_4: /data/chenyong/codes/A2SAM/data/FIVES/train/logit
       cache: none
       split_key: train
@@ -20,14 +20,14 @@ val_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: /data/chenyong/codes/A2SAM/data/FIVES/test/Original
-      root_path_2: /data/chenyong/codes/A2SAM/data/FIVES/test/Ground truth
-      root_path_3: /data/chenyong/codes/A2SAM/data/FIVES/test/uncertainty_ent
-      root_path_4: /data/chenyong/codes/A2SAM/data/FIVES/test/logit
+      root_path_1: /data/chenyong/codes/A2SAM/data/FIVES/validation/Original
+      root_path_2: /data/chenyong/codes/A2SAM/data/FIVES/validation/Ground truth
+      root_path_3: /data/chenyong/codes/A2SAM/data/FIVES/validation/uncertainty
+      root_path_4: /data/chenyong/codes/A2SAM/data/FIVES/validation/logit
       cache: none
-      split_key: test
+      split_key: validation
   wrapper:
-    name: val
+    name: validation
     args:
       inp_size: 1024
       original_size: (1024, 1024)
@@ -39,7 +39,7 @@ test_dataset:
     args:
       root_path_1: /data/chenyong/codes/A2SAM/data/FIVES/test/Original
       root_path_2: /data/chenyong/codes/A2SAM/data/FIVES/test/Ground truth
-      root_path_3: /data/chenyong/codes/A2SAM/data/FIVES/test/uncertainty_ent
+      root_path_3: /data/chenyong/codes/A2SAM/data/FIVES/test/uncertainty
       root_path_4: /data/chenyong/codes/A2SAM/data/FIVES/test/logit
       cache: none
       split_key: test
